@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="juan nuñez">
+    <meta name="description" content="esta es mi Primera pagina web">
+    <meta name="keywords" content="paisajes, gatos, perros, juan nuñez">
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <title>Mia, La perrita Poodler</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(252, 86, 202), rgb(250, 226, 229));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(250, 93, 179);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #1deaf1;
+        }
+
+        .active {
+            background-color: #abcdf3;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #f14ebb;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #f0c4c4;
+            float: left;
+            width: 33vw;
+            color: #0e0d0d;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #f18080;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #131212;
+            color: #f050ba;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Mia, La Perrita</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Prefrencias</a></li>
+                <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    
+    
+    <section class="centrado">
+        
+       <div class="gallery" >
+            <img src="PUDER.jpg" alt="mia valentina" width="600">
+            <div class="desc">MIA VALENTINA</div>
+       </div>
+
+       <div class="gallery" >
+            <img src="puder1.jpg" alt="mia valentina" width="600">
+            <div class="desc">MIA VALENTINA</div>
+       </div>
+
+       <div class="gallery" >
+            <img src="puder2.jpg" alt="mia valentina" width="600">
+            <div class="desc">MIA VALENTINA</div>
+       </div>
+
+    </section>
+
+        <div class="centrado">
+            <audio class="centrado" src="asset/Niña Bonita.mp3" autoplay controls muted></audio>
+        </div>
+    
+<hr>
+<footer class="footer">
+    <p>Derechos reservados &copy;2024</p>
+</footer>
+</body>
+</html>

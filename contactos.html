@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="juan nuñez">
+    <meta name="description" content="esta es mi Primera pagina web">
+    <meta name="keywords" content="paisajes, gatos, perros, juan nuñez">
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <title>Mia, La perrita Poodler</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(243, 84, 145), rgb(250, 203, 229), rgb(247, 109, 109));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(253, 80, 196);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #7dc5f5;
+        }
+
+        .active {
+            background-color: #71aff7;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #f1468d;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #388d3c;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #ee61a3;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #1b1b1b;
+            color: #f3469d;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mia, La Perrita</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">prefrencias</a></li>
+                <li><a href="Audiovisuales.html">audiovisuales</a></li>
+                <li><a class="active" href="contactos.html">contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-formulario">
+        <form>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Escribir aqui tu Nombre" required minlength="3">
+            <label for="Apellido">Apellido:</label>
+            <input type="text" id="Apellido" name="Apellido" placeholder="Escribir aqui tu Apellido" required minlength="3">
+            <label for="Nombre">Email:</label>
+            <input type="text" id="Email" name="Email" placeholder="Escribir aqui tu Email" required minlength="3">
+            <label for="Pais">Pais:</label>
+            <select name="Pais" id="Pais">
+                <option value="ARGENTIA">ARGENTINA</option>
+                <option value="BOLIVIA">BOLIVIA</option>
+                <option value="BRAZIL">BRAZIL</option>
+                <option value="COLOMBIA">COLOMBIA</option>
+                <option value="CHILE">CHILE</option>
+                <option value="ECUADOR">ECUADOR</option>
+                <option value="PARAGUAY">PARAGUAY</option>
+                <option value="PERU">PERU</option>
+                <option value="VENEZUELA">VENEZUELA</option>
+                <option value="URUGUAY">URUGUAY</option>
+            </select>
+            <label for="comentario">comentario</label>
+            <textarea name="comentario" id="comentario" placeholder="escribe aqui tu comentario"></textarea>
+
+            <label for="motivo">motivo de contacto</label>
+            <input type="radio" id="motivo" name="motivo"><i>comerciales</i>
+            <input type="radio" id="motivo" name="motivo"><i>producciones</i>
+            <input type="radio" id="motivo" name="motivo"><i>eventos</i>
+            <input type="radio" id="motivo" name="motivo"><i>reclamos</i>
+
+            <input type="submit" value="enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy;2024</p>
+    </footer>
+</body>
+</html>

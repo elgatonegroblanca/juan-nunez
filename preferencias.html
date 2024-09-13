@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="juan nuñez">
+    <meta name="description" content="esta es mi Primera pagina web">
+    <meta name="keywords" content="paisajes, gatos, perros, juan nuñez">
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <title>Mia, La perrita Poodler</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(247, 105, 147), rgb(245, 189, 197));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #252525;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(245, 73, 167);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #5ebdda;
+        }
+
+        .active {
+            background-color: #7bc9f7;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #e74ea2;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(226, 117, 171);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #cf6290;
+        }
+
+        td {
+            border: 1px solid rgb(26, 25, 25);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(36, 35, 35);
+            padding: 10px 20px;
+            background-color: rgb(247, 150, 195);
+        }
+
+        .footer {
+            background-color: #080808;
+            color: #f85ca5;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+      
+    
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Mia, La Perrita</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="preferencias.html">prefrencias</a></li>
+                <li><a href="audiovisuales.html">audiovisuales</a></li>
+                <li><a href="contactos.html">contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="margin: 15px;">preferencias de Mia la Puder</h2>
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th>Descripcion</th>
+            <th>Le gusta</th>
+            <th>No le gusta</th>
+
+            <tr>
+                <td>Purina de Perro</td>
+                <td>Super Can</td>
+                <td>Dog</td>
+            </tr>
+            <tr>
+                <td>Comida</td>
+                <td>Higado de Pollo</td>
+                <td>Embutido</td>
+            </tr>
+            <tr>
+                <td>Juguetes</td>
+                <td>Hueso de Goma</td>
+                <td>El Cascabel</td>
+            </tr>
+            <tr>
+                <td>Dormir</td>
+                <td>Encima de la Cama</td>
+                <td>Piso</td>
+            </tr>
+
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <p>Derechos reservados &copy;2024</p>
+    </footer>
+</body>
+</html>
